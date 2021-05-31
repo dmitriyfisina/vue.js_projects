@@ -1,0 +1,1 @@
+export const jsvDelivrUrl = 'https://data.jsdelivr.com/v1/package/npm/'

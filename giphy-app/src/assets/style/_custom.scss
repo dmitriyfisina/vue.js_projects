@@ -1,0 +1,53 @@
+$input-group-addon-color: $gray-light;
+$input-group-addon-bg: #fff;
+$input-group-addon-border-color: #fff;
+$input-placeholder-color: $gray-light;
+
+$theme-colors: (
+    'gray-light': $gray-light,
+    'gray-medium': $gray-medium,
+    'gray-dark': $gray-dark,
+);
+
+input[type='search'] {
+    border-left: none;
+    font-size: 16px;
+    &:focus {
+        box-shadow: none;
+        border: none;
+    }
+}
+
+.nav-item {
+    .active {
+        &::before {
+            opacity: 1;
+            transform: translate(-50%, 0px);
+        }
+    }
+}
+
+.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 9px;
+        left: 50%;
+        transform: translate(-50%, 15px);
+        width: calc(100% - (16px * 2));
+        opacity: 0;
+        height: 1px;
+        background-color: #fff;
+        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    }
+    &:hover {
+        color: #fff;
+        &::before {
+            opacity: 1;
+            transform: translate(-50%, 0px);
+        }
+    }
+}

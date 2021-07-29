@@ -1,0 +1,11 @@
+@import './_fonts.scss';
+@import './_variable.scss';
+@import './_custom.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+

@@ -9,7 +9,7 @@
         </transition>
         <transition-group tag="div" class="row" name="fade">
             <b-col cols="12" sm="6" md="4" lg="3" v-for="gif in favorites" :key="gif.id">
-                <GifItem :srcUrl="gif.images.original.url" :favorites="gif.favorites" :gif="gif" />
+                <GifItem :srcUrl="gif.images.original.url" :favorites="gif.favorites" :gif="gif" iconName="trash-fill" />
             </b-col>
         </transition-group>
     </b-container>

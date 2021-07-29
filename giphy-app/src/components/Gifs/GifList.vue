@@ -24,6 +24,7 @@
                         :srcUrl="gif.images.original.url"
                         :favorites="gif.favorites"
                         :gif="gif"
+                        iconName="heart-fill"
                     />
                 </b-col>
             </b-row>

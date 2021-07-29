@@ -3,9 +3,9 @@
         <img :src="srcUrl" :alt="gif.title" />
         <div class="gif__add-to-favorites" @click="toggleFavorites(gif)">
             <b-icon
-                :class="favorites ? 'fill-blue' : 'fill-gray'"
+                :class="favorites && iconName !== 'trash-fill' ? 'fill-blue' : 'fill-gray'"
                 scale="0.9"
-                icon="heart-fill"
+                :icon="iconName"
                 aria-hidden="true"
             ></b-icon>
         </div>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    props: ['srcUrl', 'favorites', 'gif'],
+    props: ['srcUrl', 'favorites', 'gif', 'iconName'],
     methods: {
         toggleFavorites(gif) {
             if (gif.favorites) {
